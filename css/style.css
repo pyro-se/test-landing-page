@@ -1,0 +1,98 @@
+
+/* ////////////////////////////////////////////////////// */
+.sector-alpha{
+	background-image: url("../img/sector alpha/sec_a.jpg");
+	/*height: 500px;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.navbar-inner {
+    background:transparent;
+}
+/* sub-sector */
+
+.alpha-1{
+	width: 100%;
+	height: 20px;
+	color: white;
+	text-align: right;
+	font-size: 10px;
+}
+.alpha-1 a, a:visited{color:white;}
+
+/* sub-sector */
+
+.alpha-2, .alpha-3{
+	color: white;
+}
+.alpha-3{
+	text-align: center;
+}
+.alpha-4{
+	/*background-color:white;*/
+	padding: 15px;
+	font-size: 14px;
+}
+/* ////////////////////////////////////////////////////// */
+.sector-bravo{
+ color: white;
+}
+.bravo-1 img{
+	width: 100%;
+  	height: auto;
+}
+.bravo-1b{
+	width: 100%;
+	height: auto;
+}
+.bravo-2 li:before, .bravo-2{
+	list-style-type: none;
+	content: "\2713";
+}
+/* ////////////////////////////////////////////////////// */
+.sector-charlie{
+	background-color: lightgray;
+}
+
+.sector-charlie-w{
+	background-color: white;
+}
+.charlie-link{
+	text-decoration: underline;
+}
+.charlie-1{
+	text-align: center;
+}
+.charlie-2{
+	font-size: 0.9rem;
+}
+/* ////////////////////////////////////////////////////// */
+.sector-delta{
+
+}
+.delta-1, .delta-1 li:before{
+	list-style-type: none;
+	content: "\2713";
+}
+.delta-bgg{background-color: silver;}
+.delta-cntr{text-align: center;}
+/* ////////////////////////////////////////////////////// */
+.sector-echo{
+	background-color: rgb(63, 59, 59);
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
