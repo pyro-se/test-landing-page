@@ -1,1 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Wszedzie dobrze ale w domu najlepiej</title>
+    <meta name="description" content="blank">
+	<meta name="keywords" content="domy projekty zakup">
+    <meta name="author" content="L Rogowski">
+    
+    <link rel="Stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="Stylesheet" type="text/css" href="css/style.css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- SEKTOR ALPHA ///////////////////////////////////// -->
+    <div class="sector-alpha">
+    <header class="container">
+        <div class="alpha-1">
+                <a href="#zaloguj">Zaloguj</a>
+        
+                <select name="language" form="lang" class="mdb-select md-form">
+                    <option value="pl">PL</option>
+                    <option value="en">EN</option>
+                    <option value="ru">RU</option>
+                </select>
+        </div>
 
+        <nav class="navbar text-white navbar-dark bg-transparent navbar-expand-lg">
+            <a class="navbar-brand" href="main.html"><img src="img/sector alpha/logo.png" alt="domowe klimaty" height="40%" width="40%"></a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projekty domów</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">BLANK</a>
+                            <a class="dropdown-item" href="#">BLANK</a>
+                            <a class="dropdown-item" href="#">BLANK</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Zakup projektu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Poradnik</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">&#9734; Moje listy</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a>
+                    </li>                
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container alpha-3 my-4 mb-5">
+            <p class="h1">Znajdź projekt wymarzonego domu!</p>
+            <p class="h4">Przeglądaj ponad 500 autorskich projektów!</p>
+            <div class="alpha-4 bg-white text-dark text-left font-weight-bold p-3 my-5">
+                <div class="row">
+                    <div class="form-group col-lg-2 col-md-6 order-sm-1">
+                        <label for="typBudynku">Typ budynku</label>
+                        <select id="typBudynku" class="form-control">
+                            <option selected>Jednorodzinne</option>
+                            <option>Dwurodzinne</option>
+                            <option>Wielorodzinne</option>
+                            <option>Dwulokalowe, bliźniaki</option>
+                            <option>Szeregowe</option>
+                            <option>Domki letniskowe</option>
+                            <option>Hotele i pensjonaty</option>
+                            <option>Usługowe</option>
+                        </select>    
+                    </div>
+                    <div class="form-group col-lg-2 col-md-6 order-sm-2">
+                        <label for="Kondygnacja">Kondygnacja</label>
+                        <select id="Kondygnacja" class="form-control">
+                            <option selected>Piętrowy</option>
+                            <option>...</option>
+                        </select>    
+                    </div>
+                    <div class="form-group col-lg-2 col-md-6 order-sm-3">
+                        <label for="powUzytko">Powierzchnia użytkowa</label>
+                        <select id="powUzytko" class="form-control">
+                            <option>50-100 m2</option>
+                            <option>100-150 m2</option>
+                            <option selected>150-250 m2</option>
+                            <option>250-500 m2</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-2 col-md-6 order-sm-4">
+                        <label for="garaz">Miejsca w garażu</label>
+                        <select id="garaz" class="form-control">
+                            <option selected disabled>wybierz</option>
+                            <option>brak</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>    
+                    </div>
+                    <div class="form-check col-lg-1 col-md-4 order-sm-6 d-flex align-self-center align-items-center">
+                        <input type="checkbox" class="form-check-input" id="piwnica-a4">
+                        <label class="form-check-label" for="piwniaca-a4">Piwnica</label>
+                    </div>
+                    <div class="form-group col-lg-2 col-md-4 order-sm-5">
+                        <label for="projektNazwa">Nazwa projektu</label>
+                        <input type="text" class="form-control" id="projektNazwa" placeholder="Wpisz nazwę projektu">
+                    </div>
+                    <button type="button" class="btn btn-secondary align-middle aaam-3 h-25 d-inline-block col-lg-1 col-md-4 order-sm-7 d-flex align-self-center align-items-center">SZUKAJ</button>
+                </div>
+            </div><br>
+            <p></p>
+            <p></p>
+        </section>
+    </main>
+    </div>
+    <!-- SEKTOR BRAVO ///////////////////////////////////// -->
+    <div class="sector-bravo">
+        <section class="container">
+            <h2 class="h2 text-dark text-center">Nasze autorskie projekty</h2>
+            <div class="row container-fluid">
+                <article class="col-lg-6">
+                        <div class="row py-3">
+
+                            <div class="col-lg-6 col-md-12">
+                                <div class="bravo-1">
+                                    <a href="#"><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                    <div class="btn-group dropright w-100">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="font-weight-bold">Domy piętrowe </span><span style="font-size: 12px;">(123)</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-12">
+                                <div class="bravo-1">
+                                    <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                    <div class="btn-group dropright w-100">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="font-weight-bold">Domy nowoczesne </span><span style="font-size: 12px;">(123)</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+            
+                                
+                        </div>
+
+                        <div class="row py-3">
+
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="bravo-1">
+                                        <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                        <div class="btn-group dropright w-100">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="font-weight-bold">Dworki </span><span style="font-size: 12px;">(123)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="bravo-1">
+                                        <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                        <div class="btn-group dropright w-100">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="font-weight-bold">Domy jednorodzinne </span><span style="font-size: 12px;">(123)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                    
+                        </div>
+                        <div class="row py-3">
+
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="bravo-1">
+                                        <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                        <div class="btn-group dropright w-100">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="font-weight-bold">Domy wielorodzinne </span><span style="font-size: 12px;">(123)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="bravo-1">
+                                        <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                        <div class="btn-group dropright w-100">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="font-weight-bold">Letniskowe </span><span style="font-size: 12px;">(123)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                    
+                        </div>
+                </article>
+
+                <article class="col-lg-6">
+                        <div class="row py-3">
+
+                            <div class="col-lg-12">
+                                <div class="bravo-1">
+                                    <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                    <div class="btn-group dropright w-100">
+                                        <button type="button" class="btn btn-secondary btn-lg dropdown-toggle" style="height: 87px" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="font-weight-bold">Domy parterowe </span><span style="font-size: 12px;">(123)</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>
+                        <div class="row py-3">
+
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="bravo-1">
+                                        <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                        <div class="btn-group dropright w-100">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="font-weight-bold">Domy drewniane </span><span style="font-size: 12px;">(123)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="bravo-1">
+                                        <a href="#" ><img src="img/sector bravo/h2.jpg" class="d-none d-lg-block" alt="dom"></a>
+                                        <div class="btn-group dropright w-100">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="font-weight-bold">Domy murowane </span><span style="font-size: 12px;">(123)</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                    
+                        </div>
+                </article>
+                <!-- do naprawienia bordery!!!-->
+        </section>
+                <article class="mt-5 mb-5 border-bottom border-top border-dark text-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <p class="h3">Wolisz dotyk papieru? Zamów bezpłatny katalog!</p>
+                                    <div class="row">
+                                        <div class="col-lg-7">
+                                            <ul class="bravo-2">
+                                                <li> Ponad 200 projektów z pełnym opisem</li>
+                                                <li> Arykuły i porady dotyczące wyboru projektu</li>
+                                                <li> Bezpłatna dostawa</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-5 d-flex align-self-center align-items-center">
+                                            <div class=""><button href="#" class="btn btn-outline-dark px-4 mx-4" role="button" aria-disabled="true">ZAMÓW TERAZ</button></div>
+                                        </div>
+                                    </div>      
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="img/sector bravo/book-ed.png" alt="katalog" class="align-content-right">  
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                  
+    </div>
+    <!-- SEKTOR CHARLIE ///////////////////////////////////// -->
+    <div class="sector-charlie">
+        <section class="container">
+            <article class="row pt-3 pb-4">
+                <div class="col-lg-4 mt-1">
+                    <img src="img/sector charlie/i1.png" alt="projekt" height="25" width="25"><span class="ml-2 text-dark font-weight-bold">Wyjątkowe projekty domów</span><br>
+                    <!-- Ikona zrobiona przez Freepik z www.flaticon.com-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+                </div>
+                <div class="col-lg-4 mt-1">
+                    <img src="img/sector charlie/i2.png" alt="skarbonka" height="25" width="25"><span class="ml-2 text-dark font-weight-bold">Projekty tanie w budowie</span><br>
+                    <!-- Ikona zrobiona przez Freepik z www.flaticon.com-->
+                    <p>Volutpat diam ut venenatis tellus in metus vulputate eu. Mi sit amet mauris commodo quis imperdiet massa. At lectus urna duis convallis convallis tellus id.</p>
+                </div>
+                <div class="col-lg-4 mt-1">
+                    <img src="img/sector charlie/i3.png" alt="kolo-ratunkowe" height="25" width="25"><span class="ml-2 text-dark font-weight-bold">Możliwa usługa posprzedażowa</span><br>
+                    <!-- Ikona zrobiona przez Chris Veigt z www.flaticon.com-->
+                    <p>Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. Faucibus a pellentesque nisl nisi scelerisque</p>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div class="sector-charlie-w">
+        <section class="container">
+            <article class="row py-4">
+                <div class="col-lg-5">
+                    <p class="font-weight-bold h2">O naszej pracowni</p>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi quis eleifend quam adipiscing vitae. Ultricies lacus sed turpis tincidunt id aliquet. Elementum facilisis leo vel fringilla est ullamcorper eget. Justo nec ultrices dui sapien eget mi proin sed libero. Tellus molestie nunc non blandit massa enim nec dui nunc. Urna condimentum mattis pellentesque id nibh tortor id aliquet lectus. Praesent elementum facilisis leo vel. Elementum facilisis leo vel fringilla. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Sed turpis tincidunt id aliquet risus feugiat in. Lorem mollis aliquam ut porttitor leo a diam. Laoreet sit amet cursus sit amet dictum sit amet. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Nec feugiat nisl pretium fusce id. </span><br>
+                    <br>
+                    <p>Zapraszamy do współpracy!</p>
+                    <a href="#" class="text-dark charlie-link">Dowiedz się więcej</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row mb-3">
+                        <div class="col-lg-5">
+                            <h4 class="font-weight-bold">Realizacje naszych klienów &rarr;</h3>
+                            <img src="img/sector charlie/d1.jpg" alt="d1" height="200" width="250">
+                        </div>
+                        <div class="col-lg-7">
+                            <img src="img/sector charlie/d2.jpg" alt="d2" height="265" width="380">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="img/sector charlie/d3.jpg" alt="d3" height="200" width="200">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="img/sector charlie/d4.jpg" alt="d4" height="200" width="200">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="img/sector charlie/d5.jpg" alt="d5" height="200" width="200">   
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <div class="sector-charlie">
+        <section class="container pt-4">
+            <article>
+                <p class="text-dark h3 charlie-1">Pomagamy w budowie</p>
+            </article>
+            <article class="row text-dark d-flex justify-content-between charlie-2 pb-5">
+                <div class="col-lg-2 border border-dark offset-1 m-2">
+                    <img src="img/sector charlie/iw1.png" alt="znak-zapytania" height="30" width="30"><span class="ml-2 text-dark font-weight-bold">Jak wybrać projekt?</span><br>
+                    <!-- Ikona zrobiona przez Freepik z www.flaticon.com-->
+                    <p>Doradzamy, jaką decyzję podjąć</p>
+                </div>
+                <div class="col-lg-2 border border-dark m-2">
+                    <img src="img/sector charlie/iw2.png" alt="dziennik" height="30" width="30"><span class="ml-2 text-dark font-weight-bold">Dziennik budowy</span><br>
+                    <!-- Ikona zrobiona przez dDara z www.flaticon.com-->
+                    <p>Śledź swoją budowę z naszym dziennikiem</p>
+                </div>
+                <div class="col-lg-2 border border-dark m-2">
+                    <img src="img/sector charlie/iw3.png" alt="koszorys2" height="30" width="30"><span class="ml-2 text-dark font-weight-bold">Kosztorys projektu</span><br>
+                    <!-- Ikona zrobiona przez ultimatearm z www.flaticon.com-->
+                    <p>Wiesz ile materiałów zamówić i jakie poniesiesz koszty</p>
+                </div>
+                <div class="col-lg-2 border border-dark m-2">
+                    <img src="img/sector charlie/iw4.png" alt="projekt2" height="30" width="30"><span class="ml-2 text-dark font-weight-bold">Możliwy kontakt z autorem projektu</span><br>
+                    <!-- Ikona zrobiona przez itim2101 z www.flaticon.com-->
+                    <p>Odpowiadamy na pytania dotyczące projektów</p>
+                </div>
+                <div class="col-lg-2 border border-dark m-2">
+                    <img src="img/sector charlie/iw5.png" alt="komentarz" height="30" width="30"><span class="ml-2 text-dark font-weight-bold">Wymiana opinii</span><br>
+                    <!-- Ikona zrobiona przez Smashicons z www.flaticon.com-->
+                    <p>Poznaj innych budujących na naszym forum</p>
+                </div>
+
+            </article>
+        </section>
+    </div>
+    <!-- SEKTOR DELTA ///////////////////////////////////// -->
+    <div class="my-4 d-none d-lg-block sector-charlie-w"></div>
+    <div class="sector-delta py-5">
+        <div class="delta-bgg container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-4"><img src="img/sector delta/lonely_house.jpg" alt="samotny domek" height="200" width="320"></div> 
+                <div class="col-lg-4">
+                    <p class="h4">Nie przegap nowych projektów</p>
+                    <ul class="delta-1 float-left">
+                        <li> Co tydzień nowy projekt</li>
+                        <li> Wszystko co musisz wiedzieć o budowie domu</li>
+                        <li> Aktualności z branży</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                        <p class="h4">Zapisz się do newslettera!</p>
+                        <label for="newsletterEmail">Twój adres e-mail</label>
+                        <div class="form-group row">
+                            
+                            <input type="email" class="form-control d-inline-flex col-8" id="newsletterEmail" aria-describedby="emailHelp">
+                            <button type="submit" class="btn btn-light col-4">ZAPISZ SIĘ</button>
+                        </div>
+                        
+                </div>
+            </div>
+        </section></div>
+    </div>
+    <div class="delta-bgg">
+        <section class="container p-3">
+            <p class="h3 text-dark delta-cntr">Nasi partnerzy</p>
+            <div class="row d-flex justify-content-center py-3">
+                <div class="col-lg-2 col-md-3 col-sm-6 offset-lg-1"><img src="img/sector delta/logo1.png" alt="isover" width="100"></div>
+                <div class="col-lg-2 col-md-3 col-sm-6"><img src="img/sector delta/logo2.png" alt="termoorganika" width="100"></div>
+                <div class="col-lg-2 col-md-3 col-sm-6"><img src="img/sector delta/logo3.png" alt="fakro" width="100"></div>
+                <div class="col-lg-2 col-md-3 col-sm-6"><img src="img/sector delta/logo4.svg" alt="mitek" width="100"></div>
+                <div class="col-lg-2 d-none d-lg-block"><img src="img/sector delta/logo1.png" alt="isover" width="100"></div>
+            </div>
+        </section>
+    </div>
+    <!-- SEKTOR ECHO ///////////////////////////////////// -->
+    <div class="sector-echo">
+        <section class="container p-5">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-4 text-white">
+                    <p class="h6 font-weight-bold">Przeznaczenie</p>
+                    <a href="#" class="">Jednorodzinne</a><br>
+                    <a href="#" class="">Wielorodzinne</a><br>
+                    <a href="#" class="">Dwulokalowe, bliźniaki</a><br>
+                    <a href="#" class="">Szeregowe</a><br>
+                    <a href="#" class="">Domki letniskowe</a><br>
+                    <a href="#" class="">Hotele i pensjonaty</a><br>
+                    <a href="#" class="">Usługowe</a><br>
+                </div>
+                <div class="col-lg-6 col-md-9 text-white">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <p class="h6 font-weight-bold">Wielkość</p>
+                            <a href="#" class="">Małe domy</a><br>
+                            <a href="#" class="">Średnie domy</a><br>
+                            <a href="#" class="">Duże domy</a><br>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <p class="h6 font-weight-bold">Kondygnacje</p>
+                            <a href="#" class="">Parterowe</a><br>
+                            <a href="#" class="">Piętrowe</a><br>
+                            <a href="#" class="">Z piwnicą</a><br>
+                            <a href="#" class="">Z poddaszem</a><br>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <p class="h6 font-weight-bold">Wydajność</p>
+                            <a href="#" class="">Tanie w budowie</a><br>
+                            <a href="#" class="">Energooszczędne</a><br>
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col-lg-4 col-md-4">
+                            <p class="h6 font-weight-bold">Styl</p>
+                            <a href="#" class="">Klasyczne</a><br>
+                            <a href="#" class="">Drewniane</a><br>
+                            <a href="#" class="">Dworki</a><br>
+                            <a href="#" class="">nowoczesne</a><br>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <p class="h6 font-weight-bold">Działka</p>
+                            <a href="#" class="">Działka na skarpie</a><br>
+                            <a href="#" class="">Wąska działka</a><br>
+                            <a href="#" class="">Płytka działka</a><br>
+                            <a href="#" class="">Mała działka</a><br>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <p class="h6 font-weight-bold">Inne</p>
+                            <a href="#" class="">Garaże, altany, płoty</a><br>
+                            <a href="#" class="">Domy MDM</a><br>
+                            <a href="#" class="">Bestsellery</a><br>
+                            <a href="#" class="">Nowości</a><br>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-2 offset-lg-2 text-white">
+                    <p class="h5 font-weight-bold">Zakup projektu</p>
+                    <a href="#" class="">Proces zakupu</a><br>
+                    <a href="#" class="">Regulamin</a><br>
+                    <a href="#" class="">Zwroty i reklamacje</a><br>
+                    <a href="#" class="">Negocjacje cen</a><br>
+                    <a href="#" class="">Metody płatności</a><br>
+                    <a href="#" class="">Polityka prywatności</a><br>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    
+</body>
+</html>
